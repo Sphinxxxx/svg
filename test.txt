@@ -1,1 +1,32 @@
-Cloud9
+//Cloud9 -> GitHub
+//https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+
+//git status
+git add test.txt
+git commit -m "First test commit"
+git push
+
+
+Save changes:
+//http://stackoverflow.com/questions/7704480/why-does-git-commit-not-save-my-changes
+//https://git-scm.com/docs/git-commit
+
+git commit -am "Added add/commit/push steps info"
+git push
+
+
+//Undo commits (err prone):
+//http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
+//http://stackoverflow.com/questions/4372435/how-can-i-rollback-a-github-repository-to-a-specific-commit
+
+//git log
+//git reset --soft HEAD~1
+//git commit -C ORIG_HEAD
+git reset --hard HEAD~1	//https://git-scm.com/docs/git-reset
+git commit (...)
+git push -f
+
+
+
+GitHub <- Cloud9
+git pull git@github.com:Sphinxxxx/svg.git
