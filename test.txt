@@ -1,5 +1,6 @@
 //Cloud9 -> GitHub
 //https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+//http://ndpsoftware.com/git-cheatsheet.html#loc=remote_repo;
 
 //git status
 git add test.txt

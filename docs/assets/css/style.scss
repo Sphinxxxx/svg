@@ -1,0 +1,9 @@
+ul {
+    li {
+        background: red;
+        
+        &:first-child {
+            background: lime;
+        }
+    }
+}
