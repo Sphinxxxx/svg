@@ -19,6 +19,8 @@ ul {
 .abo-linkbtn {
     @extend .btn;
     
+    display: inline-block;
+    width: auto;
     margin: 0;
     background-image: linear-gradient(mediumturquoise, lightseagreen);
 }
