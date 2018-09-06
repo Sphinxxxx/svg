@@ -12,3 +12,8 @@ ul {
         }
     }
 }
+
+.abo-linkbtn {
+    @extend .btn;
+    background-image: linear-gradient(mediumturquoise, lightseagreen);
+}
