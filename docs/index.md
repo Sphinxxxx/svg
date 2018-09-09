@@ -2,8 +2,22 @@
 
 ### Todo
 
-<div style="display:flex;flex-flow:row wrap;">
-  <div style="flex:1 1 auto;min-width:20em">
+<div style="width:300px;height:350px;float:right;">
+  <style>
+    #picker-example: { display: inline-block; border: 30px solid currentColor; border-radius: 100%; }
+    .picker_wrapper: { position: absolute; }
+  </style>
+  <div id="picker-example"></div>
+  <script src="https://unpkg.com/vanilla-picker"></script>
+  <script>
+    new Picker({
+        parent: document.querySelector('#picker-example'),
+        popup: false,
+        color: 'dodgerblue',
+        onChange: function(color) { this.settings.parent.style.color = color.rgbaString; },
+    });
+  </script>
+</div>
 
 * Stuff
 * More stuff
@@ -15,21 +29,6 @@ Paragraph
 [Link MD](https://nrk.no)
 
 <a id="demo" class="abo-linkbtn" href="https://nrk.no">Link HTML</a>
-
-  </div>
-  <div style="width:400px">
-    <div id="picker-example" style="display:inline-block;border:30px solid currentColor;border-radius:100%;" ></div>
-    <script src="https://unpkg.com/vanilla-picker"></script>
-    <script>
-        new Picker({
-            parent: document.querySelector('#picker-example'),
-            popup: false,
-            color: 'dodgerblue',
-            onChange: function(color) { this.settings.parent.style.color = color; },
-        });
-    </script>
-  </div>
-</div>
 
 
 ## Info
