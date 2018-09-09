@@ -18,13 +18,14 @@ Paragraph
 
   </div>
   <div style="width:400px">
-    <div id="picker-example" style="display:inline-block;border:40px solid currentColor;" ></div>
+    <div id="picker-example" style="display:inline-block;border:30px solid currentColor;border-radius:100%;" ></div>
     <script src="https://unpkg.com/vanilla-picker"></script>
     <script>
         new Picker({
             parent: document.querySelector('#picker-example'),
+            popup: false,
             color: 'dodgerblue',
-            onChange: (color) => this.settings.parent.style.color = color,
+            onChange: function(color) { this.settings.parent.style.color = color; },
         });
     </script>
   </div>
